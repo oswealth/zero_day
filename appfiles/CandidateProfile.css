@@ -53,9 +53,13 @@ h1 {
 }
 
 .profile-form {
-  display: flex;
+  display: none;
   flex-direction: column;
   margin-top: 20px;
+}
+
+.profile-form.active {
+  display: flex;
 }
 
 .profile-form h2 {
@@ -107,6 +111,55 @@ h1 {
 
 .cta-button:last-of-type:hover {
   background-color: #218838;
+}
+
+/* Education & Experience Section */
+#education-form .form-group,
+#experience-form .form-group {
+  margin-bottom: 20px;
+}
+
+#add-education-button,
+#add-experience-button {
+  margin-top: 10px;
+  background-color: #ffc107;
+  color: #fff;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#add-education-button:hover,
+#add-experience-button:hover {
+  background-color: #e0a800;
+}
+
+.dynamic-education,
+.dynamic-experience {
+  margin-bottom: 15px;
+  padding: 10px;
+  background: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+}
+
+.dynamic-education .form-group,
+.dynamic-experience .form-group {
+  margin-bottom: 10px;
+  margin-bottom: 15px;
+  padding: 10px;
+  background: #f8f
+}
+
+/* Job Search Section */
+#job-search-type label {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+#job-search-type input[type="checkbox"] {
+  margin-right: 5px;
 }
 
 /* Responsive Design */
