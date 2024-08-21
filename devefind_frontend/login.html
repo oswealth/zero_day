@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - DeveFind</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <div class="login-page">
+    <section class="login-form-container">
+      <h1>Login to DeveFind</h1>
+
+      <!-- User Type Selection -->
+      <div class="user-type-selection">
+        <button id="job-seeker-login-btn" class="cta-button">Job Seeker</button>
+        <button id="recruiter-login-btn" class="cta-button">Recruiter</button>
+      </div>
+
+      <!-- Job Seeker Login Form -->
+      <form id="job-seeker-login-form" class="login-form" style="display: none;">
+        <div class="form-group">
+          <label for="job-seeker-email">Email:</label>
+          <input type="email" id="job-seeker-email" required>
+        </div>
+        <div class="form-group">
+          <label for="job-seeker-password">Password:</label>
+          <input type="password" id="job-seeker-password" required>
+        </div>
+        <button type="submit" class="cta-button">Login</button>
+      </form>
+
+      <!-- Recruiter Login Form -->
+      <form id="recruiter-login-form" class="login-form" style="display: none;">
+        <div class="form-group">
+          <label for="recruiter-email">Email:</label>
+          <input type="email" id="recruiter-email" required>
+        </div>
+        <div class="form-group">
+          <label for="recruiter-password">Password:</label>
+          <input type="password" id="recruiter-password" required>
+        </div>
+        <button type="submit" class="cta-button">Login</button>
+      </form>
+
+      <p class="signup-link">
+        Don't have an account? <a href="signup.html">Sign Up</a>
+      </p>
+    </section>
+  </div>
+  <script src="login.js"></script>
+</body>
+</html>
