@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recruiter's Dashboard - DeveFind</title>
+  <link rel="icon" type="image/png" href="./images/png/favicon.png" />
+  <link rel="stylesheet" href="./styles/recruitersdashboard.css">
+</head>
+<body>
+  <div class="dashboard-page">
+    <!-- User Profile Overview -->
+    <div class="user-info">
+      <img
+          src="./images/png/user.png"
+          alt="user-details. avatar"
+          width="100"
+          height="100"
+          class="card-avatar"
+          />
+
+      <div class="user-details">
+        <h2 id="recruiter-name">[User Name]</h2>
+        <p id="recruiter-title">[User Title]</p>
+        <p id="recruiter-org">[comp/Org]</p>
+      </div>
+      <button id="edit-profile-btn" class="cta-button">Edit</button>
+      <a id="logOutBtn" class="cta-button logout-button" style="cursor: pointer">Logout</a>
+    </div>
+    
+    <!-- Edit Profile Popup -->
+    <div id="edit-profile-popup" class="popup" style="display: none;">
+      <form id="edit-profile-form" class="popup-content">
+        <h2>Edit Profile</h2>
+        <div class="form-group">
+          <label for="edit-profile-picture">Profile Picture</label>
+          <input type="file" id="edit-profile-picture" name="edit-profile-picture">
+          <button type="button" id="remove-profile-picture" class="cta-button">Remove Picture</button>
+          <button type="button" id="delete-profile" class="cta-button">Delete Profile</button>
+        </div>
+        <div class="form-group">
+          <label for="edit-first-name">First Name</label>
+          <input type="text" id="edit-first-name" name="edit-first-name" required>
+        </div>
+        <div class="form-group">
+          <label for="edit-last-name">Last Name</label>
+          <input type="text" id="edit-last-name" name="edit-last-name" required>
+        </div>
+        <div class="form-group">
+          <label for="edit-backup-email">Backup Email</label>
+          <input type="email" id="edit-backup-email" name="edit-backup-email">
+        </div>
+        <div class="form-group">
+          <label for="edit-phone">Phone</label>
+          <input type="text" id="edit-phone" name="edit-phone">
+        </div>
+        <div class="form-group">
+          <label for="edit-password">New Password</label>
+          <input type="password" id="edit-password" name="edit-password">
+        </div>
+        <div class="form-group">
+          <label for="edit-confirm-password">Confirm New Password</label>
+          <input type="password" id="edit-confirm-password" name="edit-confirm-password">
+        </div>
+        <button type="submit" class="cta-button">Save Changes</button>
+        <button type="button" id="close-popup-btn" class="cta-button">Close</button>
+      </form>
+    </div>
+    </section>
+
+    <!-- Search and Filter -->
+    <section class="search-filter-bar">
+      <div class="filter-section">
+        <button id="filter-toggle" class="cta-button">Filters</button>
+        <div id="filter-dropdown" class="filter-dropdown">
+          <form id="filter-form">
+            <label for="country-filter">Country:</label>
+            <select id="country-filter">
+              <option value="">Select Country</option>
+            </select>
+    
+            <label for="gender-filter">Gender:</label>
+            <select id="gender-filter">
+              <option value="">Select Gender</option>
+            </select>
+    
+            <label for="language-filter">Language:</label>
+            <select id="language-filter">
+              <option value="">Select Language</option>
+            </select>
+    
+            <label for="proficiency-filter">Language Proficiency:</label>
+            <select id="proficiency-filter">
+              <option value="">Select Proficiency</option>
+            </select>
+    
+            <label for="level-filter">Experience Level:</label>
+            <select id="level-filter">
+              <option value="">Select Experience Level</option>
+            </select>
+    
+            <label for="profession-filter">Profession:</label>
+            <select id="profession-filter">
+              <option value="">Select Profession</option>
+            </select>
+    
+            <button type="submit" class="cta-button">Apply Filters</button>
+          </form>
+        </div>
+      </div>    
+      <div class="search-bar">
+        <form id="search-form">
+          <input 
+            type="text" 
+            id="search-query" 
+            placeholder="Search for candidates..." 
+          />
+          <button type="submit" class="cta-button">Search</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Candidates Display -->
+    <section class="candidates-display">
+      <div id="profile-container" class="profile-container">
+      </div>
+      <div class="pagination">
+        <button class="cta-button prev-button">Previous</button>
+        <button class="cta-button next-button">Next</button>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="footer-links">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="./images/png/footer.png" alt="DeveFind" width="" height="90px">
+          </a>
+        </div>
+        <hr>
+        <a href="/about">About Us</a>
+        <a href="/contact">Contact</a>
+        <a href="/privacy">Privacy Policy</a>
+        <a href="/terms">Terms of Service</a>
+      </div>
+      <div class="footer-social">
+        <a href="https://twitter.com">Twitter</a>
+        <a href="https://linkedin.com">LinkedIn</a>
+      </div>
+      <p>© 2024 DeveFind. All rights reserved.</p>
+    </footer>
+  </div>
+</body>
+<!-- scripts -->
+<script src="./js/recruitersdashboard.js"></script>
+</html>

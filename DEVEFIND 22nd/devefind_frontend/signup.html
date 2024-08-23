@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up - DeveFind</title>
+  <link rel="icon" type="image/png" href="./images/png/favicon.png" />
+  <!-- Styles -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="./styles/signup.css">
+</head>
+<body class="my-5">
+  <div class="signup-page">
+    <a href="./landingpage.html">
+      <img src="./images/png/logo-no-background.png" alt="DeveFind logo" width="auto" height="25rem">
+    </a>
+    <h1>Sign Up</h1>
+
+    <!-- User Type Selection -->
+    <div class="user-type-selection gap-2">
+      <button id="job-seeker-btn" class="cta-button">Job Seeker</button>
+      <button id="recruiter-btn" class="cta-button">Recruiter</button>
+    </div>
+
+    <!-- Job Seeker Signup Form -->
+    <form id="job-seeker-form" class="signup-form" style="display: none;">
+      <h2>Job Seeker Sign Up</h2>
+      <div class="form-group">
+        <label for="first-name">First Name</label>
+        <input type="text" id="first-name" name="firstname" placeholder="Enter your first name" required />
+      </div>
+      <div class="form-group">
+        <label for="last-name">Last Name</label>
+        <input type="text" id="last-name" name="lastname" placeholder="Enter your last name" required />
+      </div>
+      <div class="form-group">
+        <label for="age">Age</label>
+        <input type="number" id="age" name="age" placeholder="Enter your age" min="18" max="65" required />
+      </div>
+      <div class="form-group">
+        <label for="country-filter">Country:</label>
+        <select id="country-filter" name="country" required>
+          <option value="">Select Country</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="gender-filter">Gender:</label>
+        <select id="gender-filter" name="gender" required>
+          <option value="">Select Gender</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="profession-filter">Profession:</label>
+        <select id="profession-filter" name="profession" required>
+          <option value="">Select Profession</option>
+        </select>
+      </div>
+    
+            
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required />
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Create a password" required />
+      </div>
+      <div class="form-group">
+        <label for="confirm-password">Confirm Password</label>
+        <input type="password" id="confirm-password" name="confirmPwd" placeholder="Re-enter your password" required />
+      </div>
+      <button type="submit" class="cta-button">Sign Up</button>
+    </form>
+
+    <!-- Recruiter Signup Form -->
+    <form id="recruiter-form" class="signup-form" style="display: none;">
+      <h2>Recruiter Sign Up</h2>
+      <div class="form-group">
+        <label for="first-name-recruiter">First Name</label>
+        <input type="text" id="first-name-recruiter" name="firstname" placeholder="Enter your first name" required />
+      </div>
+      <div class="form-group">
+        <label for="last-name-recruiter">Last Name</label>
+        <input type="text" id="last-name-recruiter" name="lastname" placeholder="Enter your last name" required />
+      </div>
+      <div class="form-group">
+        <label for="email-recruiter">Email</label>
+        <input type="email" id="email-recruiter" name="email" placeholder="Enter your email" required />
+      </div>
+      <div class="form-group">
+        <label for="password-recruiter">Password</label>
+        <input type="password" id="password-recruiter" name="password" placeholder="Create a password" required />
+      </div>
+      <div class="form-group">
+        <label for="confirm-password-recruiter">Confirm Password</label>
+        <input type="password" id="confirm-password-recruiter" name="confirmPwd" placeholder="Re-enter your password" required />
+      </div>
+      <button type="submit" class="cta-button">Sign Up</button>
+    </form>
+  </div>
+
+  <!-- scripts -->
+  <script src="./js/signup.js"></script>
+</body>
+</html>

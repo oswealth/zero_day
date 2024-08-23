@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Candidate Profile - DeveFind</title>
+  <link rel="icon" type="image/png" href="./images/png/favicon.png" />
+  <link rel="stylesheet" href="./styles/CandidateProfile.css">
+</head>
+<body>
+  <div class="profile-page">
+    <a href="./landingpage.html">
+      <img src="./images/png/logo-no-background.png" alt="DeveFind logo" width="auto" height="25rem">
+    </a>
+    <h1>Complete Your Profile</h1>
+
+    <!-- User Type Selection -->
+    <div class="section-selection">
+      <button id="personal-info-btn" class="cta-button">Brief</button>
+      <button id="education-btn" class="cta-button">Education & Experience</button>
+      <button id="skills-btn" class="cta-button">Top Skills</button>
+      <button id="work-exp-btn" class="cta-button">Portfolio</button>
+    </div>
+
+    <!-- Personal Information Form -->
+    <form id="brief-form" class="profile-form" style="display: none;">
+      <h2>Contact</h2>
+      <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="text" id="phone" name="phone" placeholder="+233204596177">
+      </div>
+      <div class="form-group">
+        <label for="backupEmail">Backup Email</label>
+        <input type="email" id="backpuEmail" name="backupEmail" placeholder="example@gmail.com">
+      </div>
+      <br>
+      <h2>Level</h2>
+      <div class="form-group">
+        <label for="level">Level of Experience</label>
+        <input type="text" id="level" name="Level">
+      </div>
+      <br>
+      <h2>Summary</h2>
+      <div class="form-group">
+        <label for="headLine">Headline</label>
+        <input type="text" id="headLine" name="headLine" placeholder="Enter a single sentence description of your professional skills/experience (e.g. Expert Web Designer with Ajax experience)">
+      </div>
+      <div class="form-group">
+        <label for="description">Description</label>
+        <textarea id="description" name="description" rows="7" cols="40" style="resize: none" wrap="soft" placeholder="Use this space to show clients you have the skills and experience they're looking for.
+        Describe your strengths and skills
+        Highlight projects, accomplishments and education
+        Keep it short and make sure it's error-free"></textarea>
+      </div>
+      <br>
+      <div class="form-group">
+        <h2>Socials</h2>
+        <label for="github">Github</label>
+        <input type="url" id="github" name="github">
+      </div>
+      <div class="form-group">
+        <label for="linkedIn">LinkedIn</label>
+        <input type="url" id="linkedIn" name="linkedIn">
+      </div>
+      <div class="form-group">
+        <label for="facebook">Facebook</label>
+        <input type="url" id="facebook" name="facebook">
+      </div>
+      <div class="form-group">
+        <label for="blogs">Blogs</label>
+        <input type="url" id="blogs" name="blogs">
+      </div>
+      <div class="form-group">
+        <label for="website">Personal Website</label>
+        <input type="url" id="website" name="website">
+      </div>
+     
+      <button type="button" class="cta-button" id="save-continue-1">Save and Continue</button>
+    </form>
+
+    <!-- Education & Experience Form -->
+    <form id="education-form" class="profile-form" style="display: none;">
+      <h2>Education</h2>
+
+      <!-- Education Section -->
+      <div id="education-section">
+        <div class="form-group">
+          <label for="school">Instituition</label>
+          <input type="text" id="school" name="school" required>
+        </div>
+        <div class="form-group">
+          <label for="degree">Degree</label>
+          <input type="text" id="degree" name="degree" required>
+        </div>
+        <div class="form-group">
+          <label for="field-of-study">Field of Study</label>
+          <input type="text" id="field-of-study" name="field-of-study" required>
+        </div>
+        <div class="form-group">
+          <label for="graduation-year">Graduation Date</label>
+          <input type="date" id="graduation-year" name="graduation-year" required>
+        </div>
+        <button type="button" id="add-education" class="cta-button">Add More Education</button>
+      </div>
+      <br>
+
+      <!-- Work Experience Section -->
+      <div id="experience-section">
+        <h2>Experience</h2>
+        <div class="form-group">
+          <label for="job-title">Job Title</label>
+          <input type="text" id="job-title" name="job-title">
+        </div>
+        <div class="form-group">
+          <label for="company">Company Name</label>
+          <input type="text" id="company" name="company">
+        </div>
+        <div class="form-group">
+          <label for="years-of-experience">Location</label>
+          <input type="text" id="location" name="location">
+        </div>
+        <div class="form-group">
+          <label for="graduation-year">Start Date</label>
+          <input type="date" id="startdate" name="startdate" required>
+        </div>
+        <div class="form-group">
+          <label for="graduation-year">End Date</label>
+          <input type="date" id="enddate" name="enddate" required>
+        </div>
+        <button type="button" id="add-experience" class="cta-button">Add More Experience</button>
+      </div>
+
+      <button type="button" class="cta-button" id="save-continue-2">Save and Continue</button>
+    </form>
+
+    <!-- Top Skills Form -->
+    <form id="skills-form" class="profile-form" style="display: none;">
+      <h2>Top Skills</h2>
+      <div class="form-group">
+        <label for="skills">Skills (2-6)</label>
+        <div id="skills-container">
+          <input type="text" id="skill-1" name="skills[]" placeholder="Skill 1" required>
+          <input type="text" id="skill-2" name="skills[]" placeholder="Skill 2" required>
+        </div>
+        <button type="button" id="add-skill-button">Add Skill</button>
+      </div>
+      <br>
+      <h2>Certificates</h2>
+      <div class="form-group">
+        <label for="certName">Name</label>
+        <input type="text" id="certName" name="certtName">
+      </div>
+      <div class="form-group">
+        <label for="issuing">Issuing Organization</label>
+        <input type="text" id="issuing" name="issuing">
+      </div>
+      <div class="form-group">
+        <label for="issueDate">Date Issued</label>
+        <input type="date" id="issueDate" name="issueDate">
+      </div>
+      <div>
+        <button type="button" id="add-certification" class="cta-button">Add More</button>
+      </div>
+      <button type="button" class="cta-button" id="save-continue-3">Save and Continue</button>
+    </form>
+
+    <!-- Portfolio Form -->
+    <form id="portfolio-form" class="profile-form" style="display: none;">
+      <h2>Portfolio</h2>
+      <div class="form-group">
+        <label for="projectName">Project Name</label>
+        <input type="text" id="projectName" name="projectName">
+      </div>
+      <div class="form-group">
+        <label for="techUsed">Technologies Used</label>
+        <input type="text" id="techUsed" name="techUsed">
+      </div>
+      <div class="form-group">
+        <label for="role">Role</label>
+        <input type="text" id="role" name="role">
+      </div>
+      <div class="form-group">
+        <label for="graduation-year">Description</label>
+        <textarea id="description" name="description" rows="7" cols="40" style="resize: none" wrap="soft" placeholder="Description of Project. Keep it short and make sure it's error-free"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="portfolioLink">Link</label>
+        <input type="url" id="portfolioLink" name="portfolioLink" required>
+      </div>
+      <div>
+        <button type="button" id="add-portfolio" class="cta-button">Add More</button>
+      </div>
+      <button type="button" class="cta-button" id="save-continue-4">Save and Finish</button>
+    </form>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const urlParams = new URLSearchParams(window.location.search);
+        document.getElementById('first-name').value = urlParams.get('firstName') || '';
+        document.getElementById('last-name').value = urlParams.get('lastName') || '';
+        document.getElementById('email').value = urlParams.get('email') || '';
+    });
+  </script>
+
+  <script src="./js/CandidateProfile.js"></script>
+</body>
+</html>

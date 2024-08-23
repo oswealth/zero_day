@@ -1,0 +1,109 @@
+/* Login Page Styles */
+.login-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #2c3e50;
+  padding: 20px;
+}
+
+.login-form-container {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+.login-page h1 {
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+/* User Type Selection */
+.user-type-selection {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.user-type-selection .cta-button {
+  width: 45%;
+  background-color: #e74c3c;
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background-color 0.3s, transform 0.2s;
+  border: none;
+  cursor: pointer;
+}
+
+.user-type-selection .cta-button:hover {
+  background-color: #c0392b;
+}
+
+.user-type-selection .cta-button.active {
+  background-color: #c0392b; /* Active state styling */
+}
+
+/* Login Forms */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.login-form .form-group {
+  margin-bottom: 20px;
+}
+
+.login-form .form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #2c3e50;
+}
+
+.login-form .form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.login-form .cta-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #e74c3c;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-form .cta-button:hover {
+  background-color: #c0392b;
+}
+
+/* Signup Link */
+.signup-link {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.signup-link a {
+  color: #e74c3c;
+  text-decoration: none;
+}
+
+.signup-link a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,54 @@
+{
+  "version": "1.0",
+    
+    "country": [
+      "Algeria", "Angola", "Benin", "Botswana", "Burkina Faso", "Burundi", "Cabo Verde", "Cameroon",
+      "Central African Republic", "Chad", "Comoros", "Democratic Republic of the Congo", "Republic of the Congo",
+      "Djibouti", "Egypt", "Equatorial Guinea", "Eritrea", "Eswatini", "Ethiopia", "Gabon", "Gambia", "Ghana", "Guinea",
+      "Guinea-Bissau", "Ivory Coast", "Kenya", "Lesotho", "Liberia", "Libya", "Madagascar", "Malawi", "Mali",
+      "Mauritania", "Mauritius", "Morocco", "Mozambique", "Namibia", "Niger", "Nigeria", "Rwanda",
+      "São Tomé and Príncipe", "Senegal", "Seychelles", "Sierra Leone", "Somalia", "South Africa", "South Sudan",
+      "Sudan", "Tanzania", "Togo", "Tunisia", "Uganda", "Zambia", "Zimbabwe"
+    ],
+  
+    "gender": [ "Male", "Female", "Other"],
+  
+    "languages": [
+      "Albanian", "Arabic", "Bengali", "Bosnian", "Bulgarian", "Chinese", "Czech", "Danish", "Dutch", "English",
+      "Estonian", "Finnish", "Filipino", "French", "German", "Greek", "Hebrew", "Hindi", "Hungarian", "Indonesian",
+      "Italian", "Japanese", "Korean", "Latvian", "Lithuanian", "Malay", "Macedonian", "Marathi", "Nepali", "Norwegian",
+      "Persian", "Polish", "Portuguese", "Romanian", "Russian", "Sinhala", "Slovak", "Slovenian", "Spanish", "Swahili",
+      "Swedish", "Thai", "Turkish", "Ukrainian", "Vietnamese"
+    ],
+  
+    "proficiency": [ "A1", "A2", "B1", "B2", "C1", "C2" ],
+  
+    "level": [
+      "New Graduate",
+      "1 Years of Exp",
+      "2 Years of Exp",
+      "3 Years of Exp",
+      "4 Years of Exp",
+      "5 Years of Exp",
+      "6 Years of Exp",
+      "7 Years of Exp",
+      "8 Years of Exp",
+      "9 Years of Exp",
+      "+10 Years of Exp"
+    ],
+  
+    "profession": ["API Developer", "API Integration Specialist", "Application Support Analyst",
+      "Artificial Intelligence (AI) Engineer", "Back-End Developer", "Blockchain Developer",
+      "Business Intelligence (BI) Developer", "Cloud Engineer", "Cloud Solutions Architect",
+      "Configuration Management Engineer", "Data Analyst", "Data Engineer", "Database Administrator (DBA)",
+      "Database Developer", "DevOps Engineer", "Embedded Software Engineer", "Embedded Systems Architect",
+      "Embedded Systems Developer", "Firmware Developer", "Front-End Developer", "Full Stack Developer",
+      "Game Developer", "IT Auditor", "IT Consultant", "IT Support Specialist", "Kubernetes Engineer",
+      "Mobile App Developer", "Network Engineer", "Performance Engineer", "Platform Engineer", "Portfolio Manager",
+      "QA Engineer", "Research and Development (R&D) Engineer", "Robotics Engineer", "Security Engineer",
+      "Site Reliability Engineer (SRE)", "Software Architect", "Software Development Engineer in Test (SDET)",
+      "Systems Administrator", "Systems Integration Engineer", "Systems Programmer", "Technical Project Manager",
+      "Technical Writer", "UI Engineer", "UI/UX Designer", "User Experience (UX) Researcher", "Web Developer",
+      "Wireless Engineer", "XR Developer (AR/VR)", "Technology Evangelist"
+    ]
+}
