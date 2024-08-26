@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile View</title>
+    <link rel="icon" type="image/png" href="./images/png/favicon.png" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./styles/profileView.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+    <!– Navbar –>
+    <nav class="navbar">
+      <div class="container-xl">
+        <a class="navbar-brand" href="#">
+          <img src="./images/png/logo-no-background.png" alt="DeveFind">
+        </a>
+    </nav>
+    <div class="container mt-5">
+        <!– Header Section –>
+        <div class="header-section d-flex align-items-center mb-4">
+            <img src="./images/png/user.png" class="rounded-circle" alt="Profile Image" id="profile-image" width="150">
+                <div class="ml-3">
+                <h2 id="dev-name">[Developer Name]</h2>
+                <p id="dev-profession">[Profession]</p>
+                <p id="dev-country">[Country]</p>
+                
+                <div class="social-media">
+                    <a href="#" id="github-link" target="_blank" title="GitHub Profile"><i class="fab fa-github"></i></a>
+                    <a href="#" id="linkedin-link" target="_blank" title="LinkedIn Profile"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" id="facebook-link" target="_blank" title="Facebook Profile"><i class="fab fa-facebook"></i></a>
+                    <a href="#" id="blogs-link" target="_blank" title="Blog"><i class="fas fa-rss"></i></a>
+                    <a href="#" id="website-link" target="_blank" title="Personal Website"><i class="fas fa-globe"></i></a>
+                </div>
+             </div>
+            <div class="personal-info ml-auto">
+                <p><strong>Age:</strong> <span id="dev-age">[Age]</span></p>
+                <p><strong>Gender:</strong> <span id="dev-gender">[Gender]</span></p>
+                <p><strong>Email:</strong> <span id="dev-email">[Email]</span></p>
+                <p><strong>Phone:</strong> <span id="dev-phone">[Phone]</span></p>
+            </div>
+        </div>
+
+        <!– Summary Section –>
+        <div class="card mb-4">
+            <div class="card-body">
+                <h4 class="card-title">Summary</h4>
+                <p id="dev-summary">[Headline]</p>
+            </div>
+            <div class="card-body">
+                <p id="dev-description">[Description]</p>
+            </div>
+        </div>
+
+        <!– Languages Section –>
+        <div class="card mb-4">
+            <div class="card-body">
+                <h4 class="card-title">Languages</h4>
+                <ul class="list-group list-group-flush" id="language-list">
+                </ul>
+            </div>
+        </div>
+
+        <!– Education Section –>
+        <div class="card mb-4">
+            <div class="card-body">
+                <h4 class="card-title">Education</h4>
+                <ul class="list-group list-group-flush" id="education-list">
+                </ul>
+            </div>
+        </div>
+
+        <!– Experience Section –>
+        <div class="card mb-4">
+            <div class="card-body">
+                <h4 class="card-title">Experience</h4>
+                <ul class="list-group list-group-flush" id="experience">
+                </ul>
+            </div>
+        </div>
+
+        <!– Level –>
+        <div class="card mb-4">
+            <div class="card-body">
+                <h4 class="card-title">Level</h4>
+                <ul class="list-group list-group-flush" id="Level">
+                </ul>
+            </div>
+        </div>
+
+        <!– Portfolio Section –>
+        <div class="card mb-4">
+            <div class="card-body">
+                <h4 class="card-title">Portfolio</h4>
+                <ul class="list-group list-group-flush" id="portfolio-list">
+                </ul>
+            </div>
+        </div>
+
+        <!– Certificates Section –>
+        <div class="card mb-4">
+            <div class="card-body">
+                <h4 class="card-title">Certificates</h4>
+                <ul class="list-group list-group-flush" id="certificates-list">
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!– Bootstrap –>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./js/profileView.js"></script>
+</body>
+</html>

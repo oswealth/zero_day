@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Developer Dashboard</title>
+  <link rel="icon" type="image/png" href="./images/png/favicon.png" />
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/developerDash.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">DevDashboard</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Dashboard</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Profile</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Logout</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container mt-5">
+    <div class="row">
+      <!-- Profile Overview -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="./images/png/user.png" class="card-img-top img-fluid rounded-circle" alt="Profile Image" id="profile-image">
+          <div class="card-body">
+            <h5 class="card-title text-center" id="dev-name">[User Name]</h5>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item" id="dev-age">Age: [Age]</li>
+              <li class="list-group-item" id="dev-gender">Gender: [Gender]</li>
+              <li class="list-group-item" id="dev-country">Country: [Country]</li>
+              <li class="list-group-item" id="dev-profession">Profession: [Profession]</li>
+              <li class="list-group-item" id="dev-email">Email: [Email]</li>
+              <li class="list-group-item" id="dev-phone">Phone: [Phone]</li>
+              <li class="list-group-item" id="dev-languages">Languages: [Languages]</li>
+              <li class="list-group-item" id="dev-summary">Summary: [Headline] - [Description]</li>
+            </ul>
+            <a href="#" class="btn btn-primary btn-block mt-3" data-toggle="modal" data-target="#editProfileModal">Edit Profile</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dashboard Sections -->
+      <div class="col-md-8">
+        <!-- Education Section -->
+        <div class="card mb-4">
+          <div class="card-header d-flex justify-content-between align-items-center">
+            Education
+            <button class="btn btn-sm btn-outline-primary" data-toggle="modal" data-target="#editEducationModal">Edit</button>
+          </div>
+          <ul class="list-group list-group-flush" id="education-list">
+            <!-- Education items will be appended here -->
+          </ul>
+        </div>
+
+        <!-- Experience Section -->
+        <div class="card mb-4">
+          <div class="card-header d-flex justify-content-between align-items-center">
+            Experience
+            <button class="btn btn-sm btn-outline-primary" data-toggle="modal" data-target="#editExperienceModal">Edit</button>
+          </div>
+          <ul class="list-group list-group-flush" id="experience-list">
+            <!-- Experience items will be appended here -->
+          </ul>
+        </div>
+
+        <!-- Portfolio Section -->
+        <div class="card mb-4">
+          <div class="card-header d-flex justify-content-between align-items-center">
+            Portfolio
+            <button class="btn btn-sm btn-outline-primary" data-toggle="modal" data-target="#editPortfolioModal">Edit</button>
+          </div>
+          <ul class="list-group list-group-flush" id="portfolio-list">
+            <!-- Portfolio items will be appended here -->
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modals for Editing Information -->
+  <!-- Profile Modal -->
+  <div class="modal fade" id="editProfileModal" tabindex="-1" aria-labelledby="editProfileModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="editProfileModalLabel">Edit Profile</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form id="profileForm">
+            <!-- Form Fields for profile information -->
+            <div class="form-group">
+              <label for="firstName">First Name</label>
+              <input type="text" class="form-control" id="firstName" placeholder="Enter first name">
+            </div>
+            <div class="form-group">
+              <label for="lastName">Last Name</label>
+              <input type="text" class="form-control" id="lastName" placeholder="Enter last name">
+            </div>
+            <!-- Add more fields as necessary -->
+            <button type="submit" class="btn btn-primary">Save Changes</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Education Modal -->
+  <div class="modal fade" id="editEducationModal" tabindex="-1" aria-labelledby="editEducationModalLabel" aria-hidden="true">
+    <!-- Modal content here -->
+  </div>
+
+  <!-- Experience Modal -->
+  <div class="modal fade" id="editExperienceModal" tabindex="-1" aria-labelledby="editExperienceModalLabel" aria-hidden="true">
+    <!-- Modal content here -->
+  </div>
+
+  <!-- Portfolio Modal -->
+  <div class="modal fade" id="editPortfolioModal" tabindex="-1" aria-labelledby="editPortfolioModalLabel" aria-hidden="true">
+    <!-- Modal content here -->
+  </div>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer-links">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="./images/png/footer.png" alt="DeveFind" width="" height="90px">
+        </a>
+      </div>
+      <hr>
+      <a href="/about">About Us</a>
+      <a href="/contact">Contact</a>
+      <a href="/privacy">Privacy Policy</a>
+      <a href="/terms">Terms of Service</a>
+    </div>
+    <div class="footer-social">
+      <a href="https://twitter.com">Twitter</a>
+      <a href="https://linkedin.com">LinkedIn</a>
+    </div>
+    <p>© 2024 DeveFind. All rights reserved.</p>
+  </footer>
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zyA1bRZ6zJ7s8U2LifdZog69TWC+0n9E7/y6xQd" crossorigin="anonymous"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4Ag6r4GMXYM35Q5Yo9onJ6UGP0r12B7CmYFUp9yFeAAkFs0p6Ck" crossorigin="anonymous"></script>
+  <script src="./js/developerDash.js"></script>
+</body>
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Developer Dashboard</title>
+  <link rel="icon" type="image/png" href="./images/png/favicon.png" />
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/developerDash.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">DevDashboard</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Dashboard</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Profile</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Logout</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+<div class="container mt-5">
+  <!-- Profile Section -->
+  <div class="row mb-4 align-items-center">
+    <div class="col-md-8 d-flex align-items-center">
+      <img src="./images/png/user.png" class="img-fluid rounded-circle" alt="Profile Image" id="profile-image">
+      <div class="ml-3">
+        <h4 id="dev-name">[User Name]</h4>
+        <p id="dev-profession">[Profession]</p>
+        <p id="dev-country">[Country]</p>
+      </div>
+    </div>
+    <div class="col-md-4 text-right">
+      <button class="btn btn-primary" data-toggle="modal" data-target="#editProfileModal">Edit Profile</button>
+    </div>
+  </div>
+
+
+    <!-- Middle Section with Two Columns -->
+    <div class="row">
+      <!-- Left Column (Smaller) -->
+      <div class="col-md-4">
+        <!-- Personal Information Row -->
+        <div class="card mb-4">
+          <div class="card-body">
+            <p id="dev-age">Age: [Age]</p>
+            <p id="dev-gender">Gender: [Gender]</p>
+            <p id="dev-email">Email: [Email]</p>
+            <p id="dev-phone">Phone: [Phone]</p>
+          </div>
+        </div>
+
+        <!-- Language Section -->
+        <div class="card mb-4">
+          <div class="card-header d-flex justify-content-between align-items-center">
+            Languages
+            <button class="btn btn-sm btn-outline-primary">Add</button>
+          </div>
+          <div class="card-body">
+            <ul class="list-group list-group-flush" id="dev-languages">
+              <!-- Language items will be appended here -->
+            </ul>
+          </div>
+        </div>
+
+        <!-- Education Section -->
+        <div class="card mb-4">
+          <div class="card-header d-flex justify-content-between align-items-center">
+            Education
+            <div>
+              <button class="btn btn-sm btn-outline-primary">Add</button>
+              <button class="btn btn-sm btn-outline-secondary">Edit</button>
+            </div>
+          </div>
+          <div class="card-body">
+            <ul class="list-group list-group-flush" id="education-list">
+              <!-- Education items will be appended here -->
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column (Larger) -->
+      <div class="col-md-8">
+        <!-- Summary Section -->
+        <div class="card mb-4">
+          <div class="card-header d-flex justify-content-between align-items-center">
+            Summary
+            <button class="btn btn-sm btn-outline-primary">Add</button>
+          </div>
+          <div class="card-body">
+            <p id="dev-summary">Summary: [Headline] - [Description]</p>
+          </div>
+        </div>
+
+        <!-- Portfolio Section -->
+        <div class="card mb-4">
+          <div class="card-header d-flex justify-content-between align-items-center">
+            Portfolio
+            <button class="btn btn-sm btn-outline-primary">Add</button>
+          </div>
+          <div class="card-body">
+            <ul class="list-group list-group-flush" id="portfolio-list">
+              <!-- Portfolio items will be appended here -->
+            </ul>
+          </div>
+        </div>
+
+        <!-- Skills Section -->
+        <div class="card mb-4">
+          <div class="card-header d-flex justify-content-between align-items-center">
+            Skills
+            <button class="btn btn-sm btn-outline-primary">Add</button>
+          </div>
+          <div class="card-body">
+            <ul class="list-group list-group-flush" id="skills-list">
+              <!-- Skills items will be appended here -->
+            </ul>
+          </div>
+        </div>
+
+        <!-- Certificates Section -->
+        <div class="card mb-4">
+          <div class="card-header d-flex justify-content-between align-items-center">
+            Certificates
+            <button class="btn btn-sm btn-outline-primary">Add</button>
+          </div>
+          <div class="card-body">
+            <ul class="list-group list-group-flush" id="certificates-list">
+              <!-- Certificates items will be appended here -->
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Profile Modal -->
+  <div class="modal fade" id="editProfileModal" tabindex="-1" aria-labelledby="editProfileModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="editProfileModalLabel">Edit Profile</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form id="profileForm">
+            <!-- Form Fields for profile information -->
+            <div class="form-group">
+              <label for="firstName">First Name</label>
+              <input type="text" class="form-control" id="firstName" placeholder="Enter first name">
+            </div>
+            <div class="form-group">
+              <label for="lastName">Last Name</label>
+              <input type="text" class="form-control" id="lastName" placeholder="Enter last name">
+            </div>
+    
+            <button type="submit" class="btn btn-primary">Save Changes</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer-links">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="./images/png/footer.png" alt="DeveFind" width="" height="90px">
+        </a>
+      </div>
+      <hr>
+      <a href="/about">About Us</a>
+      <a href="/contact">Contact</a>
+      <a href="/privacy">Privacy Policy</a>
+      <a href="/terms">Terms of Service</a>
+    </div>
+    <div class="footer-social">
+      <a href="https://twitter.com">Twitter</a>
+      <a href="https://linkedin.com">LinkedIn</a>
+    </div>
+    <p>© 2024 DeveFind. All rights reserved.</p>
+  </footer>
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4Ag6r4GMXYM35Q5Yo9onJ6UGP0r12B7CmYFUp9yFeAAkFs0p6Ck" crossorigin="anonymous"></script>
+  <script src="./js/developerDash.js"></script>
+</body>
+</html>

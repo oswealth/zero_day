@@ -1,0 +1,125 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.navbar {
+    background-color: #2c3e50;
+    padding: 10px 20px;
+}
+
+.navbar-brand img {
+    height: 50px;
+}
+
+/* Header Section */
+.header-section {
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #bdc3c7;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+}
+
+#profile-image {
+    border: 5px solid #2c3e50;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header-section h2 {
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.header-section p {
+    margin: 0;
+    color: #7f8c8d;
+    font-size: 1.1rem;
+}
+
+.personal-info {
+    text-align: right;
+    color: #7f8c8d;
+}
+
+.personal-info p {
+    margin-bottom: 5px;
+    font-size: 1.1rem;
+}
+
+/* Social Media Icons */
+.social-media {
+    margin-top: 10px;
+}
+
+.social-icons {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons li {
+    display: block;
+}
+
+.social-icons a {
+    color: #0a2d44;
+    font-size: 3.5rem;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #2c3e50;
+}
+
+/* Card Styling */
+.card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* List Group Styling */
+.list-group-item {
+    background-color: #f8f9fa;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1rem;
+    color: #333;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.list-group-item:last-child {
+    border-bottom: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-section {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .personal-info {
+        text-align: left;
+        margin-top: 15px;
+    }
+}
